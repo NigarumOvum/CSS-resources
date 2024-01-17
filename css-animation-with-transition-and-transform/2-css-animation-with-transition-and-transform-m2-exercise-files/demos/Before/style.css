@@ -1,0 +1,56 @@
+section, h1 {
+ margin: 2rem 4rem; 
+}
+
+.square {
+	width: 150px;
+	height: 150px;
+	background: blue;	
+  position: relative;
+}
+
+
+/* The skew() method */
+#skew .square {
+  background-color: purple;
+}
+
+
+#skew .square:hover {  
+
+}
+  
+
+/* The scale() method */
+#scale .square div { 
+   background: #000;  
+   position: absolute;
+   left: 25%;
+   top: 25%;
+   width: 75px;
+   height: 75px;
+}
+
+#scale .square div:hover {
+
+}
+
+/* The rotate() method */
+#rotate .square {
+  background-color: tomato;
+}
+
+#rotate .square:hover {   
+
+}
+
+
+/* The translate() method */
+#translate .square {
+  background-color: orange;
+
+}
+
+#translate .square:hover { 
+
+}
