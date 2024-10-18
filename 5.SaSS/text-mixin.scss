@@ -1,0 +1,13 @@
+// Fluid text
+@mixin fluid-text($base-font-size, $min-width, $max-width) {
+    @media (min-width: $min-width) and (max-width: $max-width) {
+      font-size: calc(
+        #{$base-font-size}px + (#{$max-width} - #{$min-width}) *
+          ((100vw - #{$min-width}) / (#{$max-width} - #{$min-width}))
+      );
+    }
+  }
+  
+  h1 {
+   @include fluid-text(12, 375px, 1800px)
+  }
